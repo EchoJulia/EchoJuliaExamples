@@ -14,5 +14,9 @@ Julia does not havve a sufficient NMEA library to achieve this).
 ./gps.py < nmea.txt > gps.txt
 ```
 
+`thin.jl` can be used to prune the number of data points, to say,
+hourly GPS.
+
 You can then use a program like [QGIS](https://www.qgis.org/en/site/)
-to visualise the track on a map.
+to visualise the track on a map. Import delimited text layer. The
+Quick Map Services plugin provides a reasonable base map.
