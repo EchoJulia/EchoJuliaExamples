@@ -7,7 +7,7 @@ using SimradRaw
 function main(args)
     for datagram in datagrams(args, handleexceptions=true)
         if typeof(datagram) == SimradRaw.TextDatagram && datagram.dgheader.datagramtype == "NME0"
-            println(datagram.text)
+            println("$(filetime(datagram.dgheader.datetime))\t$(datagram.text)")
             flush(stdout)
         end
     end
