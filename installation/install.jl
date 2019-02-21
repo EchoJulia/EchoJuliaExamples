@@ -5,6 +5,8 @@
 using Pkg
 
 # Useful packages
+Pkg.add("Images")
+Pkg.add("ColorSchemes")
 Pkg.add("LaTeXStrings")
 Pkg.add(PackageSpec(url="https://github.com/JuliaPy/PyPlot.jl.git", rev="master"))
 Pkg.add(PackageSpec(url="https://github.com/JuliaImages/ImageFiltering.jl.git", rev="master"))
@@ -14,6 +16,7 @@ Pkg.add(PackageSpec(url="https://github.com/EchoJulia/SimradRaw.jl.git", rev="ma
 Pkg.add(PackageSpec(url="https://github.com/EchoJulia/Filetimes.jl.git", rev="master"))
 Pkg.add(PackageSpec(url="https://github.com/EchoJulia/SimradEK60.jl.git", rev="master"))
 Pkg.add(PackageSpec(url="https://github.com/EchoJulia/SimradEK60TestData.jl.git", rev="master"))
+Pkg.add(PackageSpec(url="https://github.com/EchoJulia/EchogramColorSchemes.jl.git", rev="master"))
 Pkg.add(PackageSpec(url="https://github.com/EchoJulia/EchogramPyPlot.jl.git", rev="master"))
 Pkg.add(PackageSpec(url="https://github.com/EchoJulia/EchogramUtils.jl.git", rev="master"))
 Pkg.add(PackageSpec(url="https://github.com/EchoJulia/EchogramProcessing.jl.git", rev="master"))
